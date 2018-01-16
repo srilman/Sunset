@@ -1,0 +1,44 @@
+#title {
+    text-align: center;
+}
+
+#days {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 13px;
+    border-collapse:collapse;
+
+    tr {
+        border: none;
+    }
+
+    th, td {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 8px;
+        padding-bottom: 9px;
+        border: none;
+    }
+
+    th {
+        color: grey; 
+    }
+
+    td {
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .before .after {
+        color: grey; 
+    }
+
+    .week {
+        background-color: lightgrey;
+    }
+
+    #selected {
+        background-color: dodgerblue;
+        color: white;
+    }
+}

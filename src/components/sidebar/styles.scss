@@ -1,0 +1,63 @@
+#sidebar {
+    flex: 0 0 250px;
+    background-color: #F2F2F2;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    #search {
+        flex: 0 0 40px;
+        border-bottom: 1px solid #CFCFCF;
+        // overflow: hidden;
+        padding: 0 10px;
+    }
+    
+    #main {
+        flex: 1;
+        padding: 8px;
+        overflow-y: scroll;
+    }
+    
+    #copyright {
+        flex: 0 0 30px;
+        border-top: 1px solid #CFCFCF;
+        background-color: #DFDFDF;
+        text-align: center;
+        padding: 5px;
+        font-size: 12px;
+        font-weight: 900;
+        color: #777777;
+    }
+}
+
+.line {
+    flex: 0 0 1px;
+    background-color: #CFCFCF;
+}
+
+.input-icon {
+    position: absolute;
+    left: 8px;
+    top: calc(50% - 10px);
+}
+
+#stuff {
+    padding: 5px 25px;
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid #CFCFCF;
+    font-size: 12px;
+}
+
+.input-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    float: left;
+}
+
+.settings {
+    float: right;
+}

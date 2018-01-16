@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "pretty": true,
+        "skipLibCheck": true,
+        "allowJs": true,
+        "jsx" : "react",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "removeComments": true,
+        "downlevelIteration": true,
+        "allowSyntheticDefaultImports": true,
+        "lib": ["es2017", "dom"],
+        "typeRoots": ["gapi", "gapi.auth2", "node_modules/@types"]
+    },
+    "include": [
+        "src/**/*",
+    ],
+    "exclude": ["node_modules"]
+}

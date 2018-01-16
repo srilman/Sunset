@@ -1,0 +1,67 @@
+{
+  "name": "scottylabs-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf ./dist",
+    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.prod.js",
+    "dev:dash": "cross-env NODE_ENV=development webpack-dashboard -- webpack-dev-server --config ./config/webpack.dev.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.dev.js",
+    "clean": "rimraf ./dist",
+    "start": "run dev"
+  },
+  "dependencies": {
+    "@types/gapi": "^0.0.35",
+    "@types/gapi.auth2": "^0.0.46",
+    "@types/react": "^16.0.31",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-icons": "^2.2.4",
+    "@types/react-redux": "^5.0.14",
+    "@types/redux-logger": "^3.0.5",
+    "@types/webpack-env": "^1.13.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-icons": "^2.2.7",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.36",
+    "@babel/polyfill": "^7.0.0-beta.36",
+    "@babel/preset-env": "^7.0.0-beta.36",
+    "@babel/preset-react": "^7.0.0-beta.36",
+    "@babel/preset-typescript": "^7.0.0-beta.36",
+    "awesome-typescript-loader": "^3.4.1",
+    "babel-loader": "^8.0.0-beta.0",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "html-webpack-plugin": "^2.30.1",
+    "html-webpack-template": "^6.1.0",
+    "node-sass": "^4.7.2",
+    "react-hot-loader": "^4.0.0-beta.11",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "tslint": "^5.8.0",
+    "tslint-react": "^3.3.3",
+    "typescript": "^2.6.2",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "webpack": "^3.5.5",
+    "webpack-dashboard": "^1.0.2",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "browserslist": {
+    "production": [
+      "last 2 versions",
+      "> 1%"
+    ],
+    "development": [
+      "> 5%"
+    ]
+  }
+}

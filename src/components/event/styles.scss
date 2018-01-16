@@ -1,0 +1,25 @@
+.event {
+    position: absolute;
+    left: 5px;
+    z-index: 1000;
+    background-color: #8EC78E;
+    width: calc(100% - 35px);
+    overflow: hidden;
+
+    .border {
+        float: left;
+        background-color: #076107;
+        height: 100%;
+        width: 3px;
+    }
+
+    .title {
+        padding: 5px 7px;
+        font-weight: bold;
+    }
+
+    .detail {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+}

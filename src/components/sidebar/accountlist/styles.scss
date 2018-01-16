@@ -1,0 +1,39 @@
+#account {
+    font-size: 12px;
+
+    p {
+        margin-top: 5px;
+        font-weight: bold;
+        overflow: hidden;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        list-style-type: none;
+        position: relative;
+        margin-bottom: 5px;
+
+        span {
+            color: black;
+            position: relative;
+            left: 5px;
+            font-size: 12px;
+            margin-top: 0;
+        }
+    }
+
+    li::before {
+        content: '\2022';
+        position: absolute;
+        left: -10px;
+        font-size: 32px;
+        line-height: 18px;
+    }
+
+    input[type=checkbox] {
+        float: right;
+    }
+}
